@@ -1,0 +1,10 @@
+#!bin/sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+export FIRMWARE=/lib/firmware
+echo "/sbin/mdev" > /proc/sys/kernel/hotplug
+/sbin/mdev -s
+
+#for kernel driver auto load
+insmod s3g_core.ko
+insmod s3g.ko

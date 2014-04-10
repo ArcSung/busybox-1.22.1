@@ -16,6 +16,9 @@
 
 INSERT
 
+#define reg_trivial_usage "None"
+#define reg_full_usage "None"
+
 #define busybox_notes_usage \
        "Hello world!\n"
 

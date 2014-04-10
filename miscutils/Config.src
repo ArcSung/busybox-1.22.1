@@ -477,6 +477,24 @@ config MT
 	  to advance or rewind a tape past a specified number of archive
 	  files on the tape.
 
+config REG
+	bool "reg"
+	default y
+	help
+	  sr    [value]      get/set sr.
+	  srb   [value]      get/set srb.
+	  cr    [value]      get/set cr. 
+          crb   [value]      get/set crb.
+          pmu   [value]      get/set pmu.
+          mmio  [value]      get/set mmio.
+          gpio  [value]      get/set gpio.
+          dump  fileName     dump regs to file.
+          ld    fileName     load dumped file.
+          diff  f-A f-B      diff 2 dumped file.
+          ldd   a/b[l/r]     [ldda/lddb]
+                load diff a/b or left/right.
+          q                  quit.
+
 config RAIDAUTORUN
 	bool "raidautorun"
 	default y
