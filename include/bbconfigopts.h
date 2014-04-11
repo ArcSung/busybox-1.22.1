@@ -616,6 +616,7 @@ static const char bbconfig_config[] ALIGN1 =
 "CONFIG_MICROCOM=y\n"
 "CONFIG_MOUNTPOINT=y\n"
 "CONFIG_MT=y\n"
+"CONFIG_REG=y\n"
 "CONFIG_RAIDAUTORUN=y\n"
 "CONFIG_READAHEAD=y\n"
 "CONFIG_RUNLEVEL=y\n"

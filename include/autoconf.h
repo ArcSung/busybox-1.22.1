@@ -2,7 +2,7 @@
  * Automatically generated C config: don't edit
  * Busybox version: 1.22.1
  */
-#define AUTOCONF_TIMESTAMP "2014-04-09 16:15:49 CST"
+#define AUTOCONF_TIMESTAMP "2014-04-10 16:29:46 CST"
 
 #define CONFIG_HAVE_DOT_CONFIG 1
 #define ENABLE_HAVE_DOT_CONFIG 1
@@ -4540,6 +4540,14 @@
 # define IF_MT(...) __VA_ARGS__
 #endif
 #define IF_NOT_MT(...)
+#define CONFIG_REG 1
+#define ENABLE_REG 1
+#ifdef MAKE_SUID
+# define IF_REG(...) __VA_ARGS__ "CONFIG_REG"
+#else
+# define IF_REG(...) __VA_ARGS__
+#endif
+#define IF_NOT_REG(...)
 #define CONFIG_RAIDAUTORUN 1
 #define ENABLE_RAIDAUTORUN 1
 #ifdef MAKE_SUID
